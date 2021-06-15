@@ -1,0 +1,288 @@
+<!-- Navbar Component -->
+<app-navbar></app-navbar>
+
+<!-- Homepage html -->
+
+<!-- Top of Page With Opening Graphs Section -->
+
+<div class="top">
+  <div class="top-wrapper" id="top">
+      <app-simplebarchart *ngIf="fakecasesbar" [data]="fakecasesbar">
+      </app-simplebarchart>
+      <app-simplelinechart *ngIf="fakecases" [data]="fakecases">
+      </app-simplelinechart>
+      <div class="callout_jumbo">
+        <div class="typewriter">
+          <div class="line1">
+            Hello, welcome <br> to my portfolio.
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!-- About Me Section -->
+
+<div class="aboutme-nav" id="aboutme-nav">
+  <div class="aboutme-header">About Me</div>
+  <div class="aboutme-wrapper">
+    <div class="svg-wrapper-me">
+      <!-- EDIT CONTENT BELOW -->
+        <img class="photo-me" src="../../../assets/headshot2.jpg" />
+        <h5 class="aboutme-context"><span class='highlight'><strong>Hey!</strong> I'm Alexander Kuria, <strong></strong> passionate about Data Management|Data Analytics|A I.</span></h5>
+        <a href='/resume'  class="waves-effect waves-light btn square-btn navigate">My Resume</a>
+      </div>
+    <div class="">
+      <div class="" >
+        <div class="">
+            <!-- EDIT CONTENT BELOW -->
+          <h5 class=""><span class=''> </span></h5>  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- This is the projects content that will show on a larger screen (not mobile) -->
+
+<div class="projects-div" id="navigate">
+  <div class="projects-header">Projects</div>
+  <div class="projects-wrapper"  *ngIf="!mobile">
+
+    <div class="project_one">
+    </div>
+
+    <div class="project_one_context">
+      <div class='proj-wrapper'>
+        <p class="project_description">
+            <!-- EDIT CONTENT BELOW -->
+          <a href='/Dashboard1.png'><h5 class="project_title"><span class='highlight-title'>Tesla Stock Price</span></h5></a>
+            <span class='highlight-desc'>Tesla is an American electric Vehicle and clean energy company. An important shareholder is tired of receiving only monthly updates of the stock price.
+              He says that he would like to see any trends of the stock price specifically for the last 3 months. He also wants  this data to be updated daily.
+              He says it’s important for him to know the average monthly stock price , daily closing figures and volume of stock traded.</span>
+        </p>
+        <a href='https://public.tableau.com/app/profile/alexander3180/viz/TeslaDashboard_16222236719150/Dashboard1' class="waves-effect waves-light btn square-btn navigate">Read more</a>
+      </div>
+    </div>
+
+
+    <div class="project_two_context">
+      <div class='proj-wrapper'>
+        <p class="project_description">
+              <!-- EDIT CONTENT BELOW -->
+          <a href='https://public.tableau.com/app/profile/alexander3180/viz/SuperstoreagentSuperstoretracker/Dashboard1' target='_blank'><h5 class="project_title"><span class='highlight-title'>Superstore Sales Agent Analytics</span></h5></a>
+          <span class='highlight-desc'>Superstore is a famous retailer in Canada. They have expanded into the USA and their business model involves placing Sales Agents in every state in the USA. These sales agents are responsible for bringing in sales for the state that they are assigned to.The Sales Manager wants a dashboard to track how Sales Agents are doing. He wants it to be comparable where he selects a timeframe this year (Example January - March 2020) and he wants sales data for the same period last year. This is so he can track growth.Additionally, he wants a breakdown of sales per category and subcategory as well as the top performing products.
+          </span>
+        </p>
+        <a href='https://public.tableau.com/app/profile/alexander3180/viz/SuperstoreagentSuperstoretracker/Dashboard1' class="waves-effect waves-light btn square-btn navigate">Explore</a>
+      </div>
+    </div>
+    <div class="project_two">
+    </div>
+
+    <div class="project_three">
+    </div>
+
+    <div class="project_three_context">
+      <div class='proj-wrapper'>
+        <p class="project_description">
+            <!-- EDIT CONTENT BELOW -->
+          <a href='https://public.tableau.com/app/profile/alexander3180/viz/GreenDestinationsHRAnalytics_16168763760730/Dashboard1'><h5 class="project_title"><span class='highlight-title'>H R Analytics</span></h5></a>
+          <span class='highlight-desc'>Green Destinations is a well known travel agency. The HR Director has recently noticed an
+            increase in employees leaving (attrition). She would like to figure out any trends or patterns.
+            She has surveyed the staff of Green Destinations and provided you with the data.
+            She would like to know what the attrition rate is (% of people who have left).
+            She would also like to know if factors like age, years at the company and income play a part in
+            determining if people will leave or not.</span>
+        </p>
+        <a href='https://public.tableau.com/app/profile/alexander3180/viz/GreenDestinationsHRAnalytics_16168763760730/Dashboard1' class="waves-effect waves-light btn square-btn navigate">Read More</a>
+      </div>
+    </div>
+
+   
+  <div class="project_four_context">
+    <div class='proj-wrapper'>
+      <p class="project_description">
+          <!-- EDIT CONTENT BELOW -->
+        <a href='https://public.tableau.com/app/profile/alexander3180/viz/NorthwindShipping_16218839547800/Dashboard1'><h5 class="project_title"><span class='highlight-title'>Northwind Shipping Analytics</span></h5></a>
+          <span class='highlight-desc'>Northwind Trade is a company which ships a variety of FMCG (Fast Moving Consumer Goods)
+            all over the world.
+            The Shipping Manager doesn't have much visibility and doesn't know how many orders are
+            processed and shipped on a monthly basis. He would like a dashboard of this where he selects
+            a month and can tell how many orders are outstanding a day and where they should be
+            shipped.
+            Northwind Trade has a database on Azure as well as Maria DB. The Shipping manager has
+            given us the details to connect to it.</span>
+      </p>
+      <a href='https://public.tableau.com/app/profile/alexander3180/viz/NorthwindShipping_16218839547800/Dashboard1' class="waves-effect waves-light btn square-btn navigate">Read More</a>
+    </div>
+  </div>
+  <div class="project_four">
+  </div>
+    
+
+    <div class="project_five">
+    </div>
+
+    <div class="project_five_context">
+      <div class='proj-wrapper'>
+        <p class="project_description">
+            <!-- EDIT CONTENT BELOW -->
+          <a href='https://public.tableau.com/app/profile/alexander3180/viz/DiscountMartSlesAnalytics/Dashboard1'><h5 class="project_title"><span class='highlight-title'>Discount Mart Sales Analytics</span></h5></a>
+            <span class='highlight-desc'>Discount mart is a small supermarket owned by Grant Frost. He wants a dashboard where he
+              can track how well Discount Mart is doing for this year (in terms of Sales, Profit and Quantity
+              Sold).
+              He would also like to know how well categories are performing as well as different regions.
+              Grant Frost assumes that most customers buy 2 or more products per basket/order but would
+              like this confirmed by the data.
+              Grant also noted that Profit is 30% of the selling price.</span>
+        </p>
+        <a href='https://public.tableau.com/app/profile/alexander3180/viz/DiscountMartSlesAnalytics/Dashboard1'  class="waves-effect waves-light btn square-btn navigate">Go to site</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- This is the projects content that will show on a mobile device -->
+  <div class="projects-wrapper"  *ngIf="mobile">
+
+    <div class="project_one">
+    </div>
+
+    <div class="project_one_context">
+      <div class='proj-wrapper'>
+        <p class="project_description">
+              <!-- EDIT CONTENT BELOW -->
+          <a href='https://public.tableau.com/app/profile/alexander3180/viz/TeslaDashboard_16222236719150/Dashboard1'><h5 class="project_title"><span class='highlight-title'>Tesla Stock Price</span></h5></a>
+            <span class='highlight-desc'>Tesla is an American electric Vehicle and clean energy company. An important shareholder is tired of receiving only monthly updates of the stock price.
+              He says that he would like to see any trends of the stock price specifically for the last 3 months. He also wants  this data to be updated daily.
+              He says it’s important for him to know the average monthly stock price , daily closing figures and volume of stock traded.</span>
+        </p>
+        <a href='https://public.tableau.com/app/profile/alexander3180/viz/TeslaDashboard_16222236719150/Dashboard1'  class="waves-effect waves-light btn square-btn navigate">Read more</a>
+      </div>
+    </div>
+    
+    <div class="project_two">
+    </div>
+    <div class="project_two_context">
+      <div class='proj-wrapper'>
+        <p class="project_description">
+                  <!-- EDIT CONTENT BELOW -->
+          <a href='https://public.tableau.com/app/profile/alexander3180/viz/SuperstoreagentSuperstoretracker/Dashboard1' target='_blank'><h5 class="project_title"><span class='highlight-title'>Superstore Sales Agent Analytics</span></h5></a>
+          <span class='highlight-desc'>Superstore is a famous retailer in Canada. They have expanded into the USA and their business model involves placing Sales Agents in every state in the USA. These sales agents are responsible for bringing in sales for the state that they are assigned to.The Sales Manager wants a dashboard to track how Sales Agents are doing. He wants it to be comparable where he selects a timeframe this year (Example January - March 2020) and he wants sales data for the same period last year. This is so he can track growth.Additionally, he wants a breakdown of sales per category and subcategory as well as the top performing products.
+          </span>
+        </p>
+        <a href='https://public.tableau.com/app/profile/alexander3180/viz/SuperstoreagentSuperstoretracker/Dashboard1' target='_blank' class="waves-effect waves-light btn square-btn navigate">Explore</a>
+      </div>
+    </div>
+    <div class="project_three">
+    </div>
+    <div class="project_three_context">
+      <div class='proj-wrapper'>
+        <p class="project_description">
+                  <!-- EDIT CONTENT BELOW -->
+          <a href='https://public.tableau.com/app/profile/alexander3180/viz/GreenDestinationsHRAnalytics_16168763760730/Dashboard1'><h5 class="project_title"><span class='highlight-title'>H R Analytics</span></h5></a>
+          <span class='highlight-desc'>Green Destinations is a well known travel agency. The HR Director has recently noticed an
+            increase in employees leaving (attrition). She would like to figure out any trends or patterns.
+            She has surveyed the staff of Green Destinations and provided you with the data.
+            She would like to know what the attrition rate is (% of people who have left).
+            She would also like to know if factors like age, years at the company and income play a part in
+            determining if people will leave or not</span>
+        </p>
+        <a href='https://public.tableau.com/app/profile/alexander3180/viz/GreenDestinationsHRAnalytics_16168763760730/Dashboard1' class="waves-effect waves-light btn square-btn navigate">Read More</a>
+      </div>
+    </div>
+    <div class="project_four">
+    </div>
+    <div class="project_four_context">
+      <div class='proj-wrapper'>
+        <p class="project_description">
+                  <!-- EDIT CONTENT BELOW -->
+          <a href='https://public.tableau.com/app/profile/alexander3180/viz/NorthwindShipping_16218839547800/Dashboard1'><h5 class="project_title"><span class='highlight-title'>Northwind Shipping Analytics</span></h5></a>
+            <span class='highlight-desc'>Northwind Trade is a company which ships a variety of FMCG (Fast Moving Consumer Goods)
+              all over the world.
+              The Shipping Manager doesn't have much visibility and doesn't know how many orders are
+              processed and shipped on a monthly basis. He would like a dashboard of this where he selects
+              a month and can tell how many orders are outstanding a day and where they should be
+              shipped.
+              Northwind Trade has a database on Azure as well as Maria DB. The Shipping manager has
+              given us the details to connect to it</span>
+        </p>
+        <a href='https://public.tableau.com/app/profile/alexander3180/viz/NorthwindShipping_16218839547800/Dashboard1' class="waves-effect waves-light btn square-btn navigate">Read More</a>
+      </div>
+    </div>
+    <div class="project_five">
+    </div>
+    <div class="project_five_context">
+      <div class='proj-wrapper'>
+        <p class="project_description">
+                  <!-- EDIT CONTENT BELOW -->
+          <a href='https://public.tableau.com/app/profile/alexander3180/viz/DiscountMartSlesAnalytics/Dashboard1'><h5 class="project_title"><span class='highlight-title'>Discount Mart Sales Analytics</span></h5></a>
+            <span class='highlight-desc'>Discount mart is a small supermarket owned by Grant Frost. He wants a dashboard where he
+              can track how well Discount Mart is doing for this year (in terms of Sales, Profit and Quantity
+              Sold).
+              He would also like to know how well categories are performing as well as different regions.
+              Grant Frost assumes that most customers buy 2 or more products per basket/order but would
+              like this confirmed by the data.
+              Grant also noted that Profit is 30% of the selling price</span>
+        </p>
+        <a href='https://public.tableau.com/app/profile/alexander3180/viz/DiscountMartSlesAnalytics/Dashboard1'  class="waves-effect waves-light btn square-btn navigate">Go to site</a>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Medium Post section (the Medium widget should already be loaded, just edit the handle below) -->
+<!-- EDIT CONTENT BELOW -->
+<!-- Change your medium handle below at the @ symbol -->
+  <div class="mid1" id="medium">
+    <div class="medium-logo">
+      <img src="../../../assets/mediumlogo.svg" />
+      <h2>Publications</h2>
+    </div>
+    <div class="medium-posts" >
+        <ngx-medium-widget resource="https://medium.com/@alexkamau100"
+        postsLimit="4"
+        postsPerLine="1"
+        pictureSize="small"
+        [postfields]="['description', 'publishAt','claps']"
+        postRatio="landscape">
+      </ngx-medium-widget>
+
+
+    </div>
+  </div>
+
+
+<!-- Final section area (feel free to delete if you do not have any utility for it!) -->
+  <!-- EDIT CONTENT BELOW -->
+<div class="section4" id='section4'>
+  <div class="section4-header">Expertise</div>
+  <div class="info_div">
+    <div class="section4-content">
+      <p>My expertise.
+      <ul>
+        <li><i class="material-icons">chevron_right</i>Power user of Excel, SQL, Tableau and Power Bi</li>
+        <li><i class="material-icons">chevron_right</i>Experienced at using Ms Access, SQL, Tableau</li>
+        <li><i class="material-icons">chevron_right</i>Excellent knowledge on how to use analytics to find conclusion based</li>
+        <li><i class="material-icons">chevron_right</i>Strong communication and creative problem solving skills</li>
+      </ul>
+    </div>
+
+      <div class="parent">
+        <div></div>
+        <div class="summary_final">
+            <br>
+            <br>
+            <a href='https://github.com/AlexanderKuria' class="waves-effect waves-light btn square-btn rpubs">View More</a>
+          </div>
+        <div></div>
+      </div>
+  </div>
+</div>
+
+<!-- Footer component loaded -->
+
+<app-footer></app-footer>

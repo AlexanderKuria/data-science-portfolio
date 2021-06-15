@@ -1,0 +1,21 @@
+<nav (scroll)="onWindowScroll($event)" *ngIf="mobile" class="navigation-mobile">
+  <div class="nav-wrapper">
+    <a href='/'><h5 class="name">Alexander Kuria</h5></a>
+    <div class="button-wrapper">
+      <a href="https://mail.google.com/alexkamau100@gmail.com" class="btn-floating btn-small waves-effect waves-light white navs"><i class="fa fa-envelope"></i></a>
+      <a href="https://github.com/AlexanderKuria" target="_blank" class="btn-floating btn-small waves-effect waves-light white navs"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/alexander-kuria-5a962a114/" target="_blank" class="btn-floating btn-small waves-effect waves-light white navs"><i class="fa fa-linkedin"></i></a>
+    </div>
+  </div>
+</nav>
+
+<nav (scroll)="onWindowScroll($event)" *ngIf="!mobile">
+    <div class="nav-wrapper">
+      <h5 class="name">Alexander Kuria</h5>
+      <div class="button-wrapper">
+        <a href="https://mailto:alexkamau100@gmail.com?cc=alexkamau100@gmail.com&subject=Quick%20question&body=Hi%20team%21%0aHow%20are%20you%20doing%3F" class="btn-floating btn-small waves-effect waves-light white navs"><i class="fa fa-envelope"></i></a>
+        <a href="https://github.com/AlexanderKuria" target="_blank" class="btn-floating btn-small waves-effect waves-light white navs"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/alexander-kuria-5a962a114/" target="_blank" class="btn-floating btn-small waves-effect waves-light white navs"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+</nav>
